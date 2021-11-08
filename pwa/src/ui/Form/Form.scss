@@ -1,0 +1,37 @@
+.Container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Title {
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.Item {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 16px;
+
+  &__label {
+    width: 240px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #5b6670;
+    text-align: end;
+    text-transform: uppercase;
+  }
+}
+
+.Multipart {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Submit {
+  align-self: flex-end;
+}

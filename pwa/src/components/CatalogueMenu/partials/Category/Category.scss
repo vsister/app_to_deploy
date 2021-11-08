@@ -1,0 +1,29 @@
+@import '@scss/theme.scss';
+
+.Category {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 20px;
+  white-space: nowrap;
+
+  &__name {
+    padding: 8px 0;
+    font-size: 18px;
+    transition: color 0.15s ease-in-out;
+    cursor: pointer;
+
+    &.isTopLevel {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: $red-light;
+    }
+  }
+
+  &.isTopLevel {
+    margin-bottom: 20px;
+  }
+}

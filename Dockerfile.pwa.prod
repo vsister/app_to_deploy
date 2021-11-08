@@ -1,0 +1,18 @@
+
+FROM node:14.10.1-alpine3.10
+
+WORKDIR /usr/src/app
+
+COPY ./pwa ./pwa
+COPY ./shared ./shared
+
+WORKDIR /usr/src/app/shared
+
+RUN yarn install
+RUN yarn build
+
+WORKDIR /usr/src/app/pwa
+
+RUN yarn install
+
+CMD ["yarn", "dev"]

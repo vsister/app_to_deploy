@@ -1,0 +1,26 @@
+### Create a user
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "role": "editor",
+    "name": "Test Admin",
+    "username": "editor",
+    "password": "password1234"
+}
+
+### Get all users
+GET http://localhost:3000/user HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjA3NDcyMzA2LCJleHAiOjE2MDc1NTg3MDZ9.pRLtkinyrgaKo7GiiR6matki-fk0ASFsnpClWwYgXPE
+
+### Get one user
+GET http://localhost:3000/user/5fcc14265d07240172f1f2ca HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjA3MjgzNTQwLCJleHAiOjE2MDczNjk5NDB9.x1dS_PfzmbWed_ZDAjX2JdPajCGYuTpc1JYJ6xv-IVY
+
+### Delete a user
+DELETE http://localhost:3000/user/5fcd32b249b9300150c94792 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjA3NDcyMzA2LCJleHAiOjE2MDc1NTg3MDZ9.pRLtkinyrgaKo7GiiR6matki-fk0ASFsnpClWwYgXPE
+
+### GET all users
+GET http://localhost:3000/user/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjA3NDcyMzA2LCJleHAiOjE2MDc1NTg3MDZ9.pRLtkinyrgaKo7GiiR6matki-fk0ASFsnpClWwYgXPE

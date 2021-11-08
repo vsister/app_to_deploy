@@ -1,0 +1,28 @@
+.CategoryMap {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+
+  &__top {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  &__action {
+    flex-shrink: 0;
+    margin: 0 4px;
+  }
+
+  &__title {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

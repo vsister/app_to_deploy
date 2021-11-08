@@ -1,0 +1,37 @@
+@import '~@scss/theme.scss';
+
+.Container {
+  margin: auto;
+  width: 304px;
+  height: 40px;
+  border-top: 1px solid $grey-medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 726px;
+    height: 54px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1160px;
+    height: 54px;
+  }
+}
+
+.Container__text {
+  font-style: 400;
+  color: $bordo-light;
+  font-size: 10px;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.Container__text span {
+  color: black;
+}

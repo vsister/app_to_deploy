@@ -1,0 +1,7 @@
+.Find__input {
+  width: 400px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 130px;
+  }
+}

@@ -1,0 +1,33 @@
+//Цвета
+$red-light: #FF0000;
+$red-dark: #b80606;
+$bordo-light: #A03123;
+$bordo-dark: #861709;
+$blue-light: #664BC8;
+$blue-dark: #3E23A0;
+$grey-light: #EAECED;
+$grey-medium: #9A99A2;
+$grey-dark: #5B6670;
+$black: black;
+
+.title_theme {
+    font-size: 24px;
+    font-style: 700;
+}
+
+.fieldName_theme {
+    font-size: 18px;
+    font-style: 400;
+    color: $grey-dark;
+}
+
+@media screen and (min-width: 320px) and (max-size: 767px) and (orientation: portrait) {
+    .title_theme {
+        font-size: 14px;
+        font-style: 700;
+    }
+
+    .fieldName_theme {
+        font-size: 10px;
+    }
+}

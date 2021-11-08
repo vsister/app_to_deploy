@@ -1,0 +1,27 @@
+.Breadcrumbs {
+  margin: 10px 0 20px 0;
+}
+
+.Actions {
+  width: 100%;
+  display: flex;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaeced;
+}
+
+.Category__action {
+  margin-right: 8px;
+}
+
+.Main {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.Products__container {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 20px;
+}

@@ -1,0 +1,45 @@
+### Create product
+POST http://localhost:3000/group/5fcc154c5d07240172f1f2cc/category/5fcc15515d07240172f1f2cd/subcategory/5fcc155c5d07240172f1f2ce/product HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNjA3NTAxMjQ3LCJleHAiOjE2MDc1ODc2NDd9.IH-hL2Va7Dxs94MDz4VMmZmN2NGB61QBqK6ICtnEsxk
+Content-Type: application/json
+
+{
+    "name": "Круинждер",
+    "price": 5000,
+     "specifications": [
+      {
+        "id": "5fcc155c5d07240172f1f2d6",
+        "type": "select",
+        "values": [
+          {
+            "_id": "5fcc155c5d07240172f1f2d7",
+            "value": "Raid 0"
+          },
+          {
+            "_id": "5fcc155c5d07240172f1f2d8",
+            "value": "Raid 1"
+          },
+          {
+            "_id": "5fd08032cd507301a0b9b1e2",
+            "value": "Raid 120"
+          }
+        ]
+      },
+      {
+        "id": "5fcc155c5d07240172f1f2da",
+        "name": "Количество слотов под сторадж",
+        "type": "range",
+        "rangeValue": {
+          "value": 124,
+          "_id": "5fcc155c5d07240172f1f2db",
+          "unit": "шт."
+        }
+      }
+    ]
+}
+
+#### Delete product
+DELETE http://localhost:3000/group/5fb35dc9d0fd990b09029ac3/product/5fb360c9e5b052014f9a4d1e
+
+### Find a product
+GET http://localhost:3000/product/search/kekblade

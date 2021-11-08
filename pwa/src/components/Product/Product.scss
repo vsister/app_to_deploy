@@ -1,0 +1,51 @@
+.Container {
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeced;
+}
+
+.Top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Title {
+  margin-bottom: 6px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.Price {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.Body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Specifications {
+  flex-flow: column nowrap;
+  width: auto;
+}
+
+.Specification {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.Actions {
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 30px;
+}
+
+.AmountInput {
+  width: auto;
+  max-width: 40px;
+}

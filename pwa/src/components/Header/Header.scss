@@ -1,0 +1,91 @@
+@import '~@scss/theme.scss';
+
+.header__container {
+  align-items: center;
+  display: flex;
+  max-width: 1160px;
+  height: 60px;
+  border-bottom: 1px solid $grey-medium;
+  margin: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 728px;
+    height: 110px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 304px;
+    height: 64px;
+  }
+}
+
+.Title {
+  order: 0;
+  margin-right: 60px;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  }
+}
+
+.Button {
+  order: 1;
+  margin-right: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 3;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    order: 3;
+    margin-right: 22px;
+  }
+}
+
+.Find {
+  display: flex;
+  order: 2;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 4;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    order: 4;
+  }
+}
+
+.Purchase {
+  order: 3;
+  margin-left: 150px;
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 1;
+    margin-left: 160px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    order: 1;
+    margin-left: 30px;
+    margin-right: 4px;
+  }
+}
+
+.Account {
+  order: 4;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: 2;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    order: 2;
+  }
+}
+
+// .Icon_size {
+//   height: 30px;
+//   width: 30px;
+// }

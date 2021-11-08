@@ -1,0 +1,109 @@
+.Meta {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.Sections {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.LeftSection {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 760px;
+  padding: 24px 0 20px 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-right: 1px solid #9a99a2;
+}
+
+.Title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.Verification {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.Specifications__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.Specifications__table {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Specifications__row {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+
+.Specifications__key {
+  width: 420px;
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5b6670;
+}
+
+.Specifications__value {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.RightSection {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.RightSection__row {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding: 10px;
+
+  &_key {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+  }
+
+  &_value {
+    flex-shrink: 0;
+    margin-left: 20px;
+    width: 110px;
+  }
+}
+
+.Price {
+  margin-bottom: 12px;
+}
+
+.Amount {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 110px;
+}
+
+.Amount__title {
+}
+.Amount__input {
+}

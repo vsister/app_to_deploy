@@ -1,0 +1,40 @@
+@import '@scss/theme.scss';
+
+.Container {
+  margin: auto;
+  width: 1160px;
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    width: 1000px;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+.Value {
+  text-align: right;
+  width: 220px;
+  color: $grey-dark;
+  margin-right: 20px;
+}
+
+.Input {
+  width: 760px;
+}
+
+.Title {
+  font-style: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Button {
+  width: 120px;
+}

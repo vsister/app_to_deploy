@@ -1,0 +1,9 @@
+@import '~@scss/theme.scss';
+
+.Container {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1160px;
+  min-height: calc(100vh - 114px);
+  margin: 0 auto;
+}

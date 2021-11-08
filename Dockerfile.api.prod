@@ -1,0 +1,23 @@
+FROM node:14.10.1-alpine3.10
+
+WORKDIR /usr/src/app
+
+COPY ./api ./api
+COPY ./shared ./shared
+
+WORKDIR /usr/src/app/shared
+
+RUN yarn install
+RUN yarn build
+
+WORKDIR /usr/src/app/api
+
+RUN yarn install
+RUN yarn build
+
+WORKDIR /usr/src/app/api/dist
+RUN ls
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]

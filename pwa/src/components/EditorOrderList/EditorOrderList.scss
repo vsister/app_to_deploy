@@ -1,0 +1,46 @@
+.Label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5b6670;
+  text-transform: uppercase;
+}
+
+.List {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.List__item {
+  display: flex;
+  padding: 8px 0;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #5b6670;
+}
+
+.List__itemName {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.List__left {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.List__itemActions {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.List__itemAction {
+  width: 150px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #664bc8;
+}

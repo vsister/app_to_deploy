@@ -1,0 +1,30 @@
+### Create Order
+
+POST http://localhost:3000/order HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Куча серверов ебать",
+    "meta": {
+        "feedbackContact": "Жирнов Василий Владиславович",
+        "deadline": "В течение месяца от даты заказa",
+        "deliveryAddress": "Московский 73",
+        "financingSource": "УСИТ СПбГУ",
+        "totalPrice": 1000,
+        "orderNumber": "12345678"
+    },
+    "author": "5fcc14695d07240172f1f2cb",
+    "products": [
+        {
+            "id": "5fcc155c5d07240172f1f2da", 
+            "quantity": 10
+        }
+    ]
+}
+
+### Get all orders
+GET http://localhost:3000/order/?user=5fcc14695d07240172f1f2cb HTTP/1.1
+
+### Get an order
+GET http://localhost:3000/order/5fb8497f9be56501c99c279b HTTP/1.1
+Content-Type: application/json

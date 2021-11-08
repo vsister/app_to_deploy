@@ -1,0 +1,60 @@
+.Container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.Title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.Actions {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+.Item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  padding: 24px 0;
+  justify-content: space-between;
+}
+
+.Item__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.Item__specs {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Item__spec {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.Item__price {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.Item__quantity {
+}
+
+.Item__pricePerItem {
+  font-size: 18px;
+  line-height: 24px;
+}

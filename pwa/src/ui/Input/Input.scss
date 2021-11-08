@@ -1,0 +1,94 @@
+@import '~@scss/theme.scss';
+
+.container {
+  height: auto;
+}
+
+.input {
+  //all
+  height: 30px;
+  width: 200px;
+  outline: none;
+}
+
+.input__text {
+  font-size: 16px;
+}
+
+.input_light {
+  //others
+  border: 1px solid $grey-dark;
+}
+
+.input_dark {
+  //find
+  border: 2px solid $bordo-light;
+  border-radius: 4px 0 0 4px;
+
+  &:hover {
+    border-color: $bordo-dark;
+  }
+
+  &:active {
+    border-color: $bordo-dark;
+  }
+}
+
+// .input_s { //others
+//     width: 240px;
+// }
+
+// .input_m { //auth
+//     width: 330px;
+// }
+
+// .input_l { //find
+//     width: 400px;
+// }
+
+// .input_xl { //order
+//     width: 760px;
+// }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .input_m {
+    min-width: 310px;
+  }
+  .input_xl {
+    min-width: 570px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .input__text {
+    font-size: 10px;
+  }
+
+  .input {
+    height: 20px;
+  }
+
+  .input_s {
+    min-width: 150px;
+  }
+
+  .input_m {
+    min-width: 224px;
+  }
+
+  .input_l {
+    min-width: 130px;
+  }
+
+  .input_xl {
+    min-width: 304px;
+  }
+}
+
+.input__error {
+  color: red;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  overflow-wrap: break-word;
+}

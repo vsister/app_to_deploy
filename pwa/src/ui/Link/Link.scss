@@ -1,0 +1,100 @@
+@import "~@scss/theme.scss";
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+//subtitle
+.link__text_l {
+    font-size: 20px;
+    font-style: 700;
+}
+
+.link_theme_blackRed { //also for items in subcatalogue
+    color: black;
+}
+
+.link_theme_blackRed:hover {
+    color: $red-light;
+}
+
+.link_theme_blackRed_disabled {
+    color: black;
+    cursor: default;
+}
+
+//catalogue item
+.link_m {  // also subtitle
+    width: 300px;  
+}
+
+.link__text_m { //also for items in user service
+    font-size: 18px;
+    font-style: 400;
+}
+
+.link_theme_greyRed { 
+    color: $grey-dark;
+}
+
+.link_theme_greyRed:hover {
+    color: $red-light;
+}
+
+//nav panel
+.link_s {
+    display: inline-flex;
+}
+
+.link__text_s {
+    font-size: 14px;
+    font-style: 400;
+}
+
+.link_theme_grey {
+    color: black;
+}
+
+.link_theme_grey:hover {
+    color: $grey-dark;
+}
+
+.link_theme_grey_disabled {
+    color: $grey-medium;
+    cursor: default;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .link__text_l {
+        font-size: 12px;
+    }
+
+    .link__text_m {
+        font-size: 10px;
+    }
+
+    .link_m {
+        width: 176px;
+    }
+
+    .link__text_s {
+        font-size: 8px;
+    }
+}
+
+
+/*
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .link__text_l {
+        font-size: 18px;
+    }
+
+    .link__text_m {
+        font-size: 16px;
+    }
+
+    .link__text_s {
+        font-size: 12px;
+    }
+}*/

@@ -1,0 +1,50 @@
+.Filter__container {
+  border-bottom: 1px solid #eaeced;
+  padding: 12px 0;
+
+  &:first-child {
+    border-top: 1px solid #eaeced;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #eaeced;
+  }
+}
+
+.Filter__label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Filter__inputContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 11px;
+}
+
+.Filter__range {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.Filter__input {
+  &[type='checkbox'] {
+    display: inline-block;
+  }
+
+  &[type='radio'] {
+    display: inline-block;
+  }
+
+  &[type='number'] {
+    margin-right: 8px;
+    width: auto;
+  }
+
+  margin: 0 4px 8px 0;
+}
+
+.Filter__rangeContainer {
+  display: inline-block;
+}

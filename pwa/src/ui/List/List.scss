@@ -1,0 +1,37 @@
+@import "~@scss/theme.scss";
+
+.list {
+    height: 30px;
+    width: 180px; 
+}
+
+.list_xs { //list of numbers
+    width: 60px;
+    height: 30px;
+}
+
+.list__text {
+    font-size: 16px;
+}
+
+.list_theme {
+    border: 1px solid $grey-dark;
+    //border-radius: 2px;
+    outline: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .list {
+        height: 20px;
+        width: 100px; 
+    }
+    
+    .list__text {
+        font-size: 10px;
+    }
+
+    .list_xs {
+        height: 10px;
+        width: 20px;
+    }
+}
